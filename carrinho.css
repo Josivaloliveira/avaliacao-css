@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2? family= Mukta:wght@200;300;400;500;600;700;800 & display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+    
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+}
+
+/* Seção carrinho */
+.carrinho{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    color: var(--cor-da-empresa);
+}
+
+.carrinho a{
+    text-decoration: none;
+    color: black;
+}
+
+.nome-carrinho{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0.4rem;
+}
+
+i.bi-cart-x{
+    font-size: 70px;
+    padding-right: 1.5rem; 
+    color: red;
+}
+
+/* seção do carrinho com o produto */
+.produtos-carrinho{
+    display: flex;
+    margin: auto;
+    background-color: var(--background-clear);
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px orange;
+    margin-bottom: 2rem;
+}
+
+.img-carrinho, .nome-quantidade, .lixo-valor{
+    width: 40%;
+}
+
+#imagem-produto-carrinho{
+    width: 40%;
+    margin: 2rem;
+}
+
+.nome-quantidade{
+    justify-content: center;
+}
+
+
+#nome-produto{
+    font-size: 20px;
+    /* font-weight: 800; */
+    padding: 0.4rem;
+    margin: 1.3rem;
+    text-align: center;
+    color: black;  
+    
+}
+
+.quantidade{
+    display: flex;
+    justify-content: center;
+}
+
+i.bi-trash{
+    font-size: 50px;
+    padding-top: 2rem;
+    color: red;
+}
+
+.lixo-valor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.valor-unitario{
+    font-size: 20px;
+    padding-top: 1.3rem;
+}
+
+/* Seção do CUPOM */
+.cupom{
+    display: flex;
+    justify-content: center;
+}
+
+.input-cupom {
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 25px;
+    width: 50%;
+    padding: .9rem 0 .9rem 0;
+    border: 2px solid rgba(255, 197, 5, 0.943);
+    text-align: center;
+    border-radius: 9px;
+  }
+  
+  /* .input-cupom:focus {
+   outline: none;
+  } */
+  
+  ::-webkit-.input-cupom-placeholder {
+    color: grey;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .input-cupom[type="text"]:focus {
+    border: 3px solid rgba(255, 197, 5, 0.943);
+  }
+
+  /* seção do botão realizar pagamento */
+
+.botao-aplicar{
+    box-shadow: inset 0px 1px 0px 0px #fce2c1;
+    background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color: #ffc477;
+    border-radius: 6px;
+    border: 1px solid #eeb44f;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: .9rem 0 .9rem 0;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #cc9f52;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 9%;
+}
+
+.botao-aplicar:hover {
+    background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+    background-color: #fb9e25;
+  }
+
+.botao-aplicar:active {
+    position: relative;
+    top: 1px;
+  }
+
+  /* Seção do pagamento */
+.pagamento{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column; 
+    align-items: center; 
+    color: var(--cor-da-empresa);  
+}
+
+.botao-carrinho{
+   width: 90%;
+   padding: 1.5rem;
+   display: flex;
+}
+.botao-add-carrinho{
+    margin: auto;
+}
+
+.botao-add-carrinho{
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding: 20px 24px 20px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+
+.botao-a.botao-add-carrinho {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+
+.footer{
+    background-color: var(--background-clean);
+    margin-top: 5rem;   
+}
+    
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card li{
+    list-style: none;
+}
+
+.footer-card a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.footer-item{
+    margin: .5rem;
+}
+
+i.bi-house{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-cart{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-stickies{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.footer-nome-item{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(107, 97, 97);
+}
